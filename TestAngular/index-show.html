@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Angular Show</title>
+<script src="scripts/angular.js"></script>
+</head>
+<body ng-app="">
+	<h3>Using Show directives</h3>
+	<input type="checkbox" ng-model="showHideDiv" />Show Div
+	<div ng-hide="showHideDiv"
+		style="background-color: yellow; height: 50px;"
+	>
+		<p>I am a div</p>
+		<p>I appear when the check box is checked</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Angular Testpage</title>
+<!-- <script src="scripts/angular.js"></script> -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+<script type="text/javascript">
+	var app = angular.module('Test',[]);
+</script>
+
+</head>
+<body>
+<h1>Using OrderBy filter</h1>
+<div ng-app="Test" ng-init="StudentsResult=[{name:'Tienq',marks:81}, {name:'Svbrf',marks:70},{name:'Yaito',marks:90},{name:'Pewfn',marks:98}]">
+	<table border="1">
+		<tr>
+			<th>Student Name</th>
+			<th>Mathematics Results</th>
+		</tr>
+		<tr ng-repeat="x in StudentsResult |orderBy:'-marks'">
+			<td>{{x.name}}</td>
+			<td>{{x.marks}}</td>
+		</tr>		
+	</table>
+</div>
+</body>
+</html>
+
+

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Angular Testpage</title>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+<script type="text/javascript">
+	var app = angular.module('Test',[]);
+</script>
+
+</head>
+<body>
+<div data-ng-app="Test" data-ng-init="colors = ['Pink','Red','Green','Blue','Black','White','Yellow','Gray']">
+<p>Show colors: </p>
+<ol>
+	<li data-ng-repeat="x in colors" data-ng-bind="x | uppercase">	
+	</li>
+</ol>
+</div>
+</body>
+</html>
